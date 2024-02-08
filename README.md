@@ -6,7 +6,9 @@
 ![License](https://img.shields.io/github/license/icaoberg/singularity-dua)
 
 # singularity-dua
-Singularity recipe for [dua](https://github.com/bootandy/dua).
+[![asciicast](https://asciinema.org/a/kDnXUOeqBxZVMoWuFNqzfpeey.svg)](https://asciinema.org/a/kDnXUOeqBxZVMoWuFNqzfpeey)
+
+Singularity recipe for [dua](https://github.com/Byron/dua-cli).
 
 ## Installing the container on Bridges 2
 Copy the
