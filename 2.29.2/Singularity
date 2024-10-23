@@ -1,0 +1,16 @@
+Bootstrap: docker
+From: rust:slim-buster
+
+%labels
+    MAINTAINER icaoberg
+    EMAIL icaoberg@psc.edu
+    SUPPORT help@psc.edu
+    REPOSITORY https://github.com/icaoberg/singularity-dua
+    VERSION 2.29.2
+
+%post
+    cargo install --version 2.29.2 dua-cli --no-default-features --features tui-crossplatform
+    ln -s /usr/local/cargo/bin/dua /usr/local/bin/dua
+
+%runscript
+    dua "$@"
